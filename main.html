@@ -1,0 +1,310 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Weekly Skincare & Health Timetable – Printable Checklist</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    @media print {
+      /* Hide controls when printing */
+      .no-print { display: none !important; }
+      /* Tighter spacing for paper */
+      .print-tight * { line-height: 1.2; }
+    }
+    /* Simple checkbox style for visibility on print */
+    input[type="checkbox"] { width: 1.1rem; height: 1.1rem; }
+  </style>
+</head>
+<body class="bg-slate-50 text-slate-800 print:bg-white print:text-black">
+  <div class="max-w-7xl mx-auto p-6 print-tight">
+    <!-- Header -->
+    <header class="flex items-center justify-between gap-4 mb-6">
+      <div>
+        <h1 class="text-2xl md:text-3xl font-bold">🗓️ Weekly Skincare & Health Timetable</h1>
+        <p class="text-sm text-slate-600">Follow daily. Tick items as you complete them. Designed for A4 printing.</p>
+      </div>
+      <div class="no-print flex gap-2">
+        <button onclick="window.print()" class="px-4 py-2 rounded-xl bg-slate-900 text-white shadow hover:shadow-md">Print</button>
+        <button id="resetBtn" class="px-4 py-2 rounded-xl bg-white border shadow hover:shadow-md">Reset Checks</button>
+      </div>
+    </header><!-- Legend -->
+<section class="grid md:grid-cols-4 gap-3 mb-6">
+  <div class="p-3 rounded-2xl bg-white border shadow-sm">
+    <h2 class="font-semibold">Daily Core</h2>
+    <ul class="list-disc ml-5 text-sm">
+      <li>Wake 6–6:30 AM, warm water</li>
+      <li>Face wash: <strong>besan + haldi + water</strong></li>
+      <li>10–15 min walk / stretch</li>
+      <li>Dinner light; sleep 10:30–11 PM</li>
+    </ul>
+  </div>
+  <div class="p-3 rounded-2xl bg-white border shadow-sm">
+    <h2 class="font-semibold">Weekly Treatments</h2>
+    <ul class="list-disc ml-5 text-sm">
+      <li><strong>Multani mitti + rose water:</strong> Tue & Fri</li>
+      <li><strong>Honey + Lemon (on scars):</strong> Thu & Sun</li>
+      <li><strong>Ice rub:</strong> Most other days (skip if skin dry)</li>
+    </ul>
+  </div>
+  <div class="p-3 rounded-2xl bg-white border shadow-sm">
+    <h2 class="font-semibold">Diet Reminders</h2>
+    <ul class="list-disc ml-5 text-sm">
+      <li>Curd / buttermilk daily (small bowl)</li>
+      <li>Fruit 3–4×/week (papaya ideal)</li>
+      <li>Hydration 2.5–3 L/day</li>
+    </ul>
+  </div>
+  <div class="p-3 rounded-2xl bg-white border shadow-sm">
+    <h2 class="font-semibold">Gurgaon Budget Tips</h2>
+    <ul class="list-disc ml-5 text-sm">
+      <li>Buy at sabzi mandi / local kirana</li>
+      <li>Patanjali aloe gel is fine</li>
+      <li>Homemade curd ≈ best & cheapest</li>
+    </ul>
+  </div>
+</section>
+
+<!-- Week Grid -->
+<main class="grid md:grid-cols-2 xl:grid-cols-3 gap-4">
+  <!-- Template function inlined by duplication for print reliability -->
+
+  <!-- MONDAY -->
+  <section class="p-4 rounded-2xl bg-white border shadow-sm">
+    <h3 class="text-lg font-bold mb-2">Monday</h3>
+    <div class="grid grid-cols-1 gap-2">
+      <!-- Morning -->
+      <div>
+        <h4 class="font-semibold">Morning</h4>
+        <label class="flex items-start gap-2"><input type="checkbox"/><span>Wake 6–6:30 AM & drink warm water</span></label>
+        <label class="flex items-start gap-2"><input type="checkbox"/><span>Face wash: besan + haldi + water</span></label>
+        <label class="flex items-start gap-2"><input type="checkbox"/><span>10–15 min walk / stretch</span></label>
+        <label class="flex items-start gap-2"><input type="checkbox"/><span>Breakfast: 2 eggs + fruit / Poha + curd</span></label>
+      </div>
+      <!-- Afternoon -->
+      <div>
+        <h4 class="font-semibold">Afternoon</h4>
+        <label class="flex items-start gap-2"><input type="checkbox"/><span>Lunch: dal + roti + sabji + curd</span></label>
+        <label class="flex items-start gap-2"><input type="checkbox"/><span>5 min walk after lunch</span></label>
+      </div>
+      <!-- Evening -->
+      <div>
+        <h4 class="font-semibold">Evening</h4>
+        <label class="flex items-start gap-2"><input type="checkbox"/><span>Snack: sprouts / fruit</span></label>
+        <label class="flex items-start gap-2"><input type="checkbox"/><span>30 min walk</span></label>
+        <label class="flex items-start gap-2"><input type="checkbox"/><span>Ice rub (1 min)</span></label>
+      </div>
+      <!-- Night -->
+      <div>
+        <h4 class="font-semibold">Night</h4>
+        <label class="flex items-start gap-2"><input type="checkbox"/><span>Light dinner + salad</span></label>
+        <label class="flex items-start gap-2"><input type="checkbox"/><span>Aloe vera gel (thin layer)</span></label>
+        <label class="flex items-start gap-2"><input type="checkbox"/><span>Sleep by 10:30–11 PM</span></label>
+      </div>
+    </div>
+  </section>
+
+  <!-- TUESDAY -->
+  <section class="p-4 rounded-2xl bg-white border shadow-sm">
+    <h3 class="text-lg font-bold mb-2">Tuesday</h3>
+    <div class="grid grid-cols-1 gap-2">
+      <div>
+        <h4 class="font-semibold">Morning</h4>
+        <label class="flex items-start gap-2"><input type="checkbox"/><span>Warm water, besan+haldi wash, 10–15 min walk</span></label>
+        <label class="flex items-start gap-2"><input type="checkbox"/><span>Breakfast: Poha + curd</span></label>
+      </div>
+      <div>
+        <h4 class="font-semibold">Afternoon</h4>
+        <label class="flex items-start gap-2"><input type="checkbox"/><span>Lunch + 5 min walk</span></label>
+      </div>
+      <div>
+        <h4 class="font-semibold">Evening</h4>
+        <label class="flex items-start gap-2"><input type="checkbox"/><span>Snack: fruit (papaya ideal)</span></label>
+        <label class="flex items-start gap-2"><input type="checkbox"/><span>30 min walk</span></label>
+        <label class="flex items-start gap-2"><input type="checkbox"/><span><strong>Multani mitti + rose water pack</strong> (15 min)</span></label>
+      </div>
+      <div>
+        <h4 class="font-semibold">Night</h4>
+        <label class="flex items-start gap-2"><input type="checkbox"/><span>Aloe vera gel after pack</span></label>
+        <label class="flex items-start gap-2"><input type="checkbox"/><span>Sleep by 10:45 PM</span></label>
+      </div>
+    </div>
+  </section>
+
+  <!-- WEDNESDAY -->
+  <section class="p-4 rounded-2xl bg-white border shadow-sm">
+    <h3 class="text-lg font-bold mb-2">Wednesday</h3>
+    <div class="grid grid-cols-1 gap-2">
+      <div>
+        <h4 class="font-semibold">Morning</h4>
+        <label class="flex items-start gap-2"><input type="checkbox"/><span>Warm water, besan+haldi wash, 10–15 min walk</span></label>
+        <label class="flex items-start gap-2"><input type="checkbox"/><span>Breakfast: Daliya + banana</span></label>
+      </div>
+      <div>
+        <h4 class="font-semibold">Afternoon</h4>
+        <label class="flex items-start gap-2"><input type="checkbox"/><span>Lunch + 5 min walk</span></label>
+      </div>
+      <div>
+        <h4 class="font-semibold">Evening</h4>
+        <label class="flex items-start gap-2"><input type="checkbox"/><span>Snack: boiled corn</span></label>
+        <label class="flex items-start gap-2"><input type="checkbox"/><span>30 min walk</span></label>
+        <label class="flex items-start gap-2"><input type="checkbox"/><span>Ice rub (1 min)</span></label>
+      </div>
+      <div>
+        <h4 class="font-semibold">Night</h4>
+        <label class="flex items-start gap-2"><input type="checkbox"/><span>Aloe vera gel</span></label>
+        <label class="flex items-start gap-2"><input type="checkbox"/><span>Sleep by 10:30 PM</span></label>
+      </div>
+    </div>
+  </section>
+
+  <!-- THURSDAY -->
+  <section class="p-4 rounded-2xl bg-white border shadow-sm">
+    <h3 class="text-lg font-bold mb-2">Thursday</h3>
+    <div class="grid grid-cols-1 gap-2">
+      <div>
+        <h4 class="font-semibold">Morning</h4>
+        <label class="flex items-start gap-2"><input type="checkbox"/><span>Warm water, besan+haldi wash, 10–15 min walk</span></label>
+        <label class="flex items-start gap-2"><input type="checkbox"/><span>Breakfast: 2 eggs + tomato slices</span></label>
+      </div>
+      <div>
+        <h4 class="font-semibold">Afternoon</h4>
+        <label class="flex items-start gap-2"><input type="checkbox"/><span>Lunch + 5 min walk</span></label>
+      </div>
+      <div>
+        <h4 class="font-semibold">Evening</h4>
+        <label class="flex items-start gap-2"><input type="checkbox"/><span>Snack: fruit (papaya/apple)</span></label>
+        <label class="flex items-start gap-2"><input type="checkbox"/><span>30 min walk</span></label>
+        <label class="flex items-start gap-2"><input type="checkbox"/><span><strong>Honey + Lemon</strong> on scars (10 min)</span></label>
+      </div>
+      <div>
+        <h4 class="font-semibold">Night</h4>
+        <label class="flex items-start gap-2"><input type="checkbox"/><span>Aloe vera gel</span></label>
+        <label class="flex items-start gap-2"><input type="checkbox"/><span>Sleep by 10:45 PM</span></label>
+      </div>
+    </div>
+  </section>
+
+  <!-- FRIDAY -->
+  <section class="p-4 rounded-2xl bg-white border shadow-sm">
+    <h3 class="text-lg font-bold mb-2">Friday</h3>
+    <div class="grid grid-cols-1 gap-2">
+      <div>
+        <h4 class="font-semibold">Morning</h4>
+        <label class="flex items-start gap-2"><input type="checkbox"/><span>Warm water, besan+haldi wash, 10–15 min walk</span></label>
+        <label class="flex items-start gap-2"><input type="checkbox"/><span>Breakfast: Upma + curd</span></label>
+      </div>
+      <div>
+        <h4 class="font-semibold">Afternoon</h4>
+        <label class="flex items-start gap-2"><input type="checkbox"/><span>Lunch + 5 min walk</span></label>
+      </div>
+      <div>
+        <h4 class="font-semibold">Evening</h4>
+        <label class="flex items-start gap-2"><input type="checkbox"/><span>Snack: sprouts salad</span></label>
+        <label class="flex items-start gap-2"><input type="checkbox"/><span>30 min walk</span></label>
+        <label class="flex items-start gap-2"><input type="checkbox"/><span><strong>Multani mitti + rose water pack</strong> (15 min)</span></label>
+      </div>
+      <div>
+        <h4 class="font-semibold">Night</h4>
+        <label class="flex items-start gap-2"><input type="checkbox"/><span>Aloe vera gel after pack</span></label>
+        <label class="flex items-start gap-2"><input type="checkbox"/><span>Sleep by 11:00 PM</span></label>
+      </div>
+    </div>
+  </section>
+
+  <!-- SATURDAY -->
+  <section class="p-4 rounded-2xl bg-white border shadow-sm">
+    <h3 class="text-lg font-bold mb-2">Saturday</h3>
+    <div class="grid grid-cols-1 gap-2">
+      <div>
+        <h4 class="font-semibold">Morning</h4>
+        <label class="flex items-start gap-2"><input type="checkbox"/><span>Warm water, besan+haldi wash, 10–15 min walk</span></label>
+        <label class="flex items-start gap-2"><input type="checkbox"/><span>Breakfast: Daliya + papaya</span></label>
+      </div>
+      <div>
+        <h4 class="font-semibold">Afternoon</h4>
+        <label class="flex items-start gap-2"><input type="checkbox"/><span>Lunch + 5 min walk</span></label>
+      </div>
+      <div>
+        <h4 class="font-semibold">Evening</h4>
+        <label class="flex items-start gap-2"><input type="checkbox"/><span>Snack: fruit (banana/apple)</span></label>
+        <label class="flex items-start gap-2"><input type="checkbox"/><span>30 min walk</span></label>
+        <label class="flex items-start gap-2"><input type="checkbox"/><span>Ice rub (1–2 min)</span></label>
+      </div>
+      <div>
+        <h4 class="font-semibold">Night</h4>
+        <label class="flex items-start gap-2"><input type="checkbox"/><span>Aloe vera gel</span></label>
+        <label class="flex items-start gap-2"><input type="checkbox"/><span>Sleep by 10:30 PM</span></label>
+      </div>
+    </div>
+  </section>
+
+  <!-- SUNDAY -->
+  <section class="p-4 rounded-2xl bg-white border shadow-sm xl:col-span-1">
+    <h3 class="text-lg font-bold mb-2">Sunday</h3>
+    <div class="grid grid-cols-1 gap-2">
+      <div>
+        <h4 class="font-semibold">Morning</h4>
+        <label class="flex items-start gap-2"><input type="checkbox"/><span>Warm water, besan+haldi wash, 10–15 min walk</span></label>
+        <label class="flex items-start gap-2"><input type="checkbox"/><span>Breakfast: 2 eggs + fruit</span></label>
+      </div>
+      <div>
+        <h4 class="font-semibold">Afternoon</h4>
+        <label class="flex items-start gap-2"><input type="checkbox"/><span>Lunch: dal + rice + sabji + curd</span></label>
+        <label class="flex items-start gap-2"><input type="checkbox"/><span>Cheat meal allowed, <strong>before evening</strong></span></label>
+      </div>
+      <div>
+        <h4 class="font-semibold">Evening</h4>
+        <label class="flex items-start gap-2"><input type="checkbox"/><span>30 min walk</span></label>
+        <label class="flex items-start gap-2"><input type="checkbox"/><span><strong>Honey + Lemon</strong> on scars (10 min)</span></label>
+      </div>
+      <div>
+        <h4 class="font-semibold">Night</h4>
+        <label class="flex items-start gap-2"><input type="checkbox"/><span>Aloe vera gel</span></label>
+        <label class="flex items-start gap-2"><input type="checkbox"/><span>Sleep by 10:45 PM</span></label>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- Monthly Skincare Grocery List -->
+<section class="mt-8 p-4 rounded-2xl bg-white border shadow-sm">
+  <h3 class="text-lg font-bold mb-3">🛒 Monthly Skincare Grocery List (Desi & Local, ₹200–300)</h3>
+  <div class="overflow-x-auto">
+    <table class="min-w-full text-sm">
+      <thead>
+        <tr class="bg-slate-100">
+          <th class="text-left p-2">Item</th>
+          <th class="text-left p-2">Quantity / Month</th>
+          <th class="text-left p-2">Price Range (₹)</th>
+          <th class="text-left p-2">Purpose</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="border-t"><td class="p-2 font-medium">Besan (Gram flour)</td><td class="p-2">500 g</td><td class="p-2">40–60</td><td class="p-2">Natural cleanser</td></tr>
+        <tr class="border-t"><td class="p-2 font-medium">Haldi (Turmeric powder)</td><td class="p-2">50 g</td><td class="p-2">15–25</td><td class="p-2">Anti-bacterial</td></tr>
+        <tr class="border-t"><td class="p-2 font-medium">Aloe vera gel (Patanjali/local)</td><td class="p-2">1 tube</td><td class="p-2">80–100</td><td class="p-2">Moisturizer, sun protection</td></tr>
+        <tr class="border-t"><td class="p-2 font-medium">Multani mitti</td><td class="p-2">200 g</td><td class="p-2">40–50</td><td class="p-2">Face pack, oil control</td></tr>
+        <tr class="border-t"><td class="p-2 font-medium">Rose water (Gulab jal)</td><td class="p-2">100 ml</td><td class="p-2">25–30</td><td class="p-2">Mix with multani mitti</td></tr>
+        <tr class="border-t"><td class="p-2 font-medium">Lemon + Honey</td><td class="p-2">Local purchase</td><td class="p-2">30–40</td><td class="p-2">Spot treatment (marks)</td></tr>
+        <tr class="border-t"><td class="p-2 font-medium">Papaya / Seasonal fruit</td><td class="p-2">Weekly purchase</td><td class="p-2">~40–60</td><td class="p-2">Skin glow, digestion</td></tr>
+        <tr class="border-t"><td class="p-2 font-medium">Curd (homemade preferred)</td><td class="p-2">Daily small bowl</td><td class="p-2">—</td><td class="p-2">Probiotic for gut + skin</td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<!-- Footer / Notes -->
+<footer class="mt-6 text-xs text-slate-600">
+  <p>Notes: Do not over-wash with besan (once daily is enough). Avoid popping pimples. Keep pillowcases clean weekly. Manage stress & sleep for best skin results.</p>
+</footer>
+
+  </div>  <script>
+    // Reset all checkboxes
+    document.getElementById('resetBtn')?.addEventListener('click', () => {
+      document.querySelectorAll('input[type="checkbox"]').forEach(cb => cb.checked = false);
+    });
+  </script></body>
+  </html>
