@@ -1,0 +1,97 @@
+<!DOCTYPE html><html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Weekly Skincare Timetable + Sunscreen</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 p-6 font-sans">
+  <div class="max-w-4xl mx-auto bg-white shadow-lg rounded-2xl p-6">
+    <div class="flex justify-between items-center mb-6">
+      <h1 class="text-2xl font-bold text-gray-800">Weekly Skincare Timetable + Sunscreen Reminder</h1>
+      <button onclick="window.print()" class="px-4 py-2 bg-blue-500 text-white rounded-xl shadow">Print</button>
+    </div><p class="text-gray-600 mb-4">Tick off each task daily. Don’t forget **sunscreen** every morning!</p>
+
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+  <!-- Days -->
+  <div class="border rounded-xl p-4" id="monday">
+    <h2 class="font-semibold text-lg mb-2">Monday</h2>
+    <ul class="space-y-2">
+      <li><input type="checkbox"> Morning: Wash face with mild cleanser + <span class="text-orange-600 font-semibold">Apply Sunscreen</span></li>
+      <li><input type="checkbox"> Afternoon: Hydrate well (2–3L water)</li>
+      <li><input type="checkbox"> Evening: Quick rinse if sweaty/dusty</li>
+      <li><input type="checkbox"> Night: Wash face + Aloe Vera Gel</li>
+    </ul>
+  </div>
+
+  <div class="border rounded-xl p-4" id="tuesday">
+    <h2 class="font-semibold text-lg mb-2">Tuesday</h2>
+    <ul class="space-y-2">
+      <li><input type="checkbox"> Morning: Cleanser + <span class="text-orange-600 font-semibold">Apply Sunscreen</span></li>
+      <li><input type="checkbox"> Afternoon: Hydrate & light fruit snack</li>
+      <li><input type="checkbox"> Evening: Honey + Lemon face pack (10 min)</li>
+      <li><input type="checkbox"> Night: Wash face + Aloe Vera Gel</li>
+    </ul>
+  </div>
+
+  <div class="border rounded-xl p-4" id="wednesday">
+    <h2 class="font-semibold text-lg mb-2">Wednesday</h2>
+    <ul class="space-y-2">
+      <li><input type="checkbox"> Morning: Cleanser + <span class="text-orange-600 font-semibold">Apply Sunscreen</span></li>
+      <li><input type="checkbox"> Afternoon: Hydrate & 15 min walk</li>
+      <li><input type="checkbox"> Evening: Rinse face</li>
+      <li><input type="checkbox"> Night: Wash face + Aloe Vera Gel</li>
+    </ul>
+  </div>
+
+  <div class="border rounded-xl p-4" id="thursday">
+    <h2 class="font-semibold text-lg mb-2">Thursday</h2>
+    <ul class="space-y-2">
+      <li><input type="checkbox"> Morning: Cleanser + <span class="text-orange-600 font-semibold">Apply Sunscreen</span></li>
+      <li><input type="checkbox"> Afternoon: Hydrate & avoid oily food</li>
+      <li><input type="checkbox"> Evening: Multani Mitti face pack (15 min)</li>
+      <li><input type="checkbox"> Night: Wash face + Aloe Vera Gel</li>
+    </ul>
+  </div>
+
+  <div class="border rounded-xl p-4" id="friday">
+    <h2 class="font-semibold text-lg mb-2">Friday</h2>
+    <ul class="space-y-2">
+      <li><input type="checkbox"> Morning: Cleanser + <span class="text-orange-600 font-semibold">Apply Sunscreen</span></li>
+      <li><input type="checkbox"> Afternoon: Hydrate & light stretching</li>
+      <li><input type="checkbox"> Evening: Quick rinse if dusty</li>
+      <li><input type="checkbox"> Night: Wash face + Aloe Vera Gel</li>
+    </ul>
+  </div>
+
+  <div class="border rounded-xl p-4" id="saturday">
+    <h2 class="font-semibold text-lg mb-2">Saturday</h2>
+    <ul class="space-y-2">
+      <li><input type="checkbox"> Morning: Cleanser + <span class="text-orange-600 font-semibold">Apply Sunscreen</span></li>
+      <li><input type="checkbox"> Afternoon: Hydrate & fruit snack</li>
+      <li><input type="checkbox"> Evening: Honey + Lemon face pack (10 min)</li>
+      <li><input type="checkbox"> Night: Wash face + Aloe Vera Gel</li>
+    </ul>
+  </div>
+
+  <div class="border rounded-xl p-4" id="sunday">
+    <h2 class="font-semibold text-lg mb-2">Sunday</h2>
+    <ul class="space-y-2">
+      <li><input type="checkbox"> Morning: Cleanser + <span class="text-orange-600 font-semibold">Apply Sunscreen</span></li>
+      <li><input type="checkbox"> Afternoon: Relax & hydrate well</li>
+      <li><input type="checkbox"> Evening: Multani Mitti face pack (15 min)</li>
+      <li><input type="checkbox"> Night: Wash face + Aloe Vera Gel</li>
+    </ul>
+  </div>
+</div>
+
+<div class="mt-6">
+  <button onclick="resetChecks()" class="px-4 py-2 bg-red-500 text-white rounded-xl shadow">Reset Checks</button>
+</div>
+
+  </div>  <script>
+    function resetChecks() {
+      document.querySelectorAll('input[type="checkbox"]').forEach(cb => cb.checked = false);
+    }
+  </script></body>
+</html>
